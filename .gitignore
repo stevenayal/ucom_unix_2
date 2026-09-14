@@ -1,3 +1,5 @@
+server
+client
 terminal
 *.o
 *.out
