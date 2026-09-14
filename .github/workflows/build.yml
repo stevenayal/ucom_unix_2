@@ -1,11 +1,11 @@
-name: Build C project
+name: Build and test C project
 
 on:
   push:
   pull_request:
 
 jobs:
-  build:
+  build-and-test:
     runs-on: ubuntu-24.04
 
     steps:
@@ -17,3 +17,6 @@ jobs:
 
       - name: Build
         run: make
+
+      - name: Integration test
+        run: make test
